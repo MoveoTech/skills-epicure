@@ -1,0 +1,45 @@
+{
+  "hero": "hero.png",
+  "icons": [
+    {
+      "logo" : "logo",
+      "search" : "search",
+      "user" : "user", 
+      "cart" : "cart"
+    }
+  ],
+  "chefs": [
+    {
+      "id": 1,
+      "first_name": "Yossi",
+      "last_name": "Shitrit",
+      "image": "chef1.png",
+      "resturants": [
+        {
+          "id": 1,
+          "name": "Onza",
+          "rating": "4",
+          "image": "resturant1.png"
+        },
+        {
+          "id": 2,
+          "name": "Kitchen Market",
+          "rating": "4",
+          "image": "resturant2.png"
+        },
+        {
+          "id": 3,
+          "name": "Mashya",
+          "rating": "2",
+          "image": "resturant3.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "first_name": "Asaf",
+      "last_name": "Granit",
+      "image": "hef1.png"
+    }
+  ]
+}
