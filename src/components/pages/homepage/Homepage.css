@@ -2,8 +2,5 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-<<<<<<< HEAD
-=======
     overflow-x: hidden;
->>>>>>> 1030d21 (Fixed indentation and added ;)
 }
