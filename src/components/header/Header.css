@@ -23,8 +23,8 @@
 .buttons-container {
     display: flex;
     align-items: center;
-    column-gap: 24px;
-    margin-left: 30px;
+    column-gap: 17px;
+    margin-left: 29px;
     justify-content: space-between;
 }
 
@@ -35,7 +35,7 @@
     font-weight: normal;
     border: none;
     background-color: white;
-    letter-spacing: 1.92px;
+    letter-spacing: 1.52px;
 }
 
 .icon {
