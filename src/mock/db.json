@@ -2,10 +2,24 @@
   "hero": "hero.png",
   "icons": [
     {
-      "logo" : "logo",
-      "search" : "search",
-      "user" : "user", 
-      "cart" : "cart"
+      "id": 1,
+      "name": "logo",
+      "icon": "logo.svg"
+    },
+    {
+      "id": 2,
+      "name": "search",
+      "icon": "search.svg"
+    },
+    {
+      "id": 3,
+      "name": "user",
+      "icon": "user.svg"
+    },
+    {
+      "id": 4,
+      "name": "cart",
+      "icon": "cart.svg"
     }
   ],
   "chefs": [

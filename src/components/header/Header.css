@@ -1,0 +1,54 @@
+.header-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 64px;
+    padding: 0px 127px;
+    width: -webkit-fill-available;
+}
+
+.logo-icon {
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+.menu-button {
+    font-family: 'Helvetica Neue light';
+    font-size: 18px;
+    color: #000000;
+    font-weight: normal;
+    border: none;
+    background-color: white;
+    letter-spacing: 1.92px;
+}
+
+.icon {
+    height: auto;
+    margin-left: 76px;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
