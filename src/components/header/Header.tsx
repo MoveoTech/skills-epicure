@@ -25,10 +25,7 @@ function Header() {
           </div>
         </div>
         <div className="user-container">
-          { icons ? icons.map((icon) => (<img src={icons ? require(`../../resources/icons/${icon.icon}`) : ""} key={icon.name} alt={icon.name}/>)) : "" }
-          {/* <img src={icons ? require(`../../resources/icons/${icons.get("search")?.icon}`) : ""} alt="search"/>
-          <img src={icons ? require(`../../resources/icons/${icons.get("user")?.icon}`) : ""} alt="user"/>
-          <img src={icons ? require(`../../resources/icons/${icons.get("cart")?.icon}`) : ""} alt="cart"/> */}
+          { icons ? icons.map((icon) => (<img src={icons ? require(`../../resources/icons/${icon.icon}`) : ""} key={icon.name} alt={icon.name}/>)) : "" }         
         </div>
       </div>
   )
