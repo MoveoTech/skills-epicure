@@ -1,0 +1,23 @@
+.stripe-container {
+    /* position: relative;
+    left: 20px;
+    top: 48px; */
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 18px;
+    margin: 0px;
+    letter-spacing: 1px;
+}
+
+.all-container {
+    display: flex;
+}
+
+.all-text {
+    font-weight: bold;
+    letter-spacing: 2.1px;
+    margin: 0px 13px 0px 0px;
+}
