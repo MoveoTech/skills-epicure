@@ -1,9 +1,7 @@
 .banner-container {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 64px 0px;
     overflow-x: hidden;
     width: 100%;
 }
