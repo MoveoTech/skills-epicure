@@ -1,0 +1,64 @@
+.banner-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 64px 0px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    width: 100%; 
+}
+
+.title-container {
+    display: flex;
+    position: absolute;
+    height: 222px;
+    width: 778px;
+    background: #FFFFFFE0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+h1 {
+    letter-spacing: 1.7px;
+    padding: 0px 155px;
+    margin: 0px;
+}
+
+input {
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    width: 505px;
+    height: 50px;
+    border: 0.5px solid #000000;
+    border-radius: 4px;
+    background-image: url('../../resources/icons/search.svg');
+    background-size: 33px;
+    background-position: 11px 7px;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+}
+input[type="text"],
+input::placeholder {
+    color: #000000;
+    font-family: 'Helvetica Neue Light';
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 15px;
+    letter-spacing: 1.75px;
+    transition: color 0.2s ease-in-out;
+}
+
+input:focus {
+   outline: none;
+}
+input:focus::-webkit-input-placeholder {
+    color: #0000006e;
+}
