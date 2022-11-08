@@ -1,8 +1,11 @@
 .banner-container {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 64px 0px;
     overflow-x: hidden;
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
 .banner {
@@ -11,31 +14,34 @@
 }
 
 .title-container {
+    display: flex;
     position: absolute;
-    height: 32%;
-    width: 54%;
-    inset: 34% 0px 0px 23%;
+    height: 222px;
+    width: 778px;
     background: #FFFFFFE0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
 }
 
 h1 {
-    padding: 2.35% 0px;
     letter-spacing: 1.7px;
-    line-height: 37.5px;
+    padding: 0px 155px;
+    margin: 0px;
 }
 
 input {
     background-color: transparent;
     box-sizing: border-box;
     display: flex;
-    margin: -2.2% 0px 0px 17.5%;
-    width: 65%;
-    height: 21%;
+    width: 505px;
+    height: 50px;
     border: 0.5px solid #000000;
     border-radius: 4px;
     background-image: url('../../resources/icons/search.svg');
     background-size: 33px;
-    background-position: 12px 5px;
+    background-position: 11px 7px;
     background-repeat: no-repeat;
     padding-left: 70px;
 }

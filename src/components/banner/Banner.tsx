@@ -12,13 +12,13 @@ function Banner() {
       const data = await fetchHeroImage()
       setBanner(data)
     })()
-  }, [banner])
+  }, [])
   
   return (
     <div className='banner-container'>
         {banner ? <img src={require(`../../resources/images/${banner}`)} key={banner} className="banner" alt="banner"/> : ""}
         <div className='title-container'>
-          <h1>Epicure works with the top <br/>
+          <h1>Epicure works with the top
               chef restaurants in Tel Aviv</h1>
           <input type="text" placeholder='Search for restaurant cuisine, chef'></input>
         </div>
