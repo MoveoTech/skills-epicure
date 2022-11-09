@@ -1,0 +1,21 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 379px;
+    height: 236px;
+}
+
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 8px;
+    width: 379px;
+    height: 169px;
+    background: #F9F4EA;
+}
