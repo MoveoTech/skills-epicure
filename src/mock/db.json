@@ -55,5 +55,28 @@
       "last_name": "Granit",
       "image": "hef1.png"
     }
-  ]
+  ],
+  "populars": [
+    {
+      "id": 1,
+      "name": "Claro",
+      "rating": 4,
+      "image": "claro.png",
+      "chef": "Ran Shmueli"
+    },
+    {
+      "id": 2,
+      "name": "Lumina",
+      "rating": 3,
+      "image": "lumina.png",
+      "chef": "Meir Adoni"
+    },
+    {
+      "id": 3,
+      "name": "Tiger Lily",
+      "rating": 4,
+      "image": "tiger-lily.png",
+      "chef": "Ran Shmueli"
+    }
+]
 }
