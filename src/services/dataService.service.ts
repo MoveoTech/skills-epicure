@@ -7,3 +7,7 @@ export const fetchHeroImage = async () => {
 export const fetchIcons = async () => {
     return (await Promise.resolve(db)).icons
 }
+
+export const fetchPopularRestaurants = async () => {
+    return (await Promise.resolve(db)).populars
+}
