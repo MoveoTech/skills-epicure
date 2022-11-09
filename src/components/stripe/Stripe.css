@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 0px;
+    padding: 80px 127.5px;
+    row-gap: 35px;
+    height: 574px;
 }
 
 .title {
@@ -10,19 +12,32 @@
     text-align: left;
     margin: 0px;
     letter-spacing: 1px;
+    align-self: center;
 }
 
 .all-container {
     display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
 }
 
 .all-text {
+    font-size: 24px;
     font-weight: bold;
     letter-spacing: 2.1px;
-    margin: 0px 13px 0px 0px;
+    margin: 0px;
 }
 
 .cards-container {
     display: flex;
     column-gap: 24px;
+    align-self: center;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    background-image: url("../../resources/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
 }
