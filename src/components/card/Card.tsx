@@ -1,4 +1,5 @@
 import { IRestaurant } from '../../interfaces/IRestaurant.interface'
+import Rating from '../rating/Rating'
 import './Card.css'
 
 interface CardProps {
@@ -12,6 +13,7 @@ const Card = (props : CardProps) => {
         <div className='desc-container'>
             <h3>{props.restaurant.name}</h3>
             <h5>{props.restaurant.chef}</h5>
+            <Rating rating = {props.restaurant.rating}/>
         </div>
       </div>  
     )
