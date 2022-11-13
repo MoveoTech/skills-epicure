@@ -13,6 +13,7 @@
       "icon": "android.svg"
     }
   ],
+  "big-logo":"big-logo.svg",
   "icons": [
     {
       "id": 1,
