@@ -4,6 +4,10 @@ export const fetchHeroImage = async () => {
     return (await Promise.resolve(db)).hero
 }
 
+export const fetchLogo = async () => {
+    return (await Promise.resolve(db)).logo
+}
+
 export const fetchIcons = async () => {
     return (await Promise.resolve(db)).icons
 }
@@ -25,4 +29,8 @@ export const fetchStripeData = async (type: string) => {
         default:
             return null
     }
+}
+
+export const fetchAbout = async () => {
+    return (await Promise.resolve(db)).about
 }

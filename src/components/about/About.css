@@ -1,0 +1,33 @@
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    height: 530px;
+    background: #FAFAFA;
+    padding: 0px 130px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 461px 0px 0px;
+    gap: 16px;
+}
+
+.text {
+    font-family: 'Helvetica Neue';
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2.14px;
+    text-align: start;
+}
+
+.about-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    letter-spacing: 2px;
+}
