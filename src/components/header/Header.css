@@ -1,12 +1,10 @@
 .header-container {
-    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-height: 64px;
-    padding: 0px 127px;
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
 .logo-icon {
@@ -18,13 +16,14 @@
     display: flex;
     align-items: center;
     width: 80%;
+    margin: 0px 127px;
 }
 
 .buttons-container {
     display: flex;
     align-items: center;
-    column-gap: 17px;
-    margin-left: 29px;
+    column-gap: 18px;
+    margin-left: 30px;
     justify-content: space-between;
 }
 
@@ -35,7 +34,7 @@
     font-weight: normal;
     border: none;
     background-color: white;
-    letter-spacing: 1.52px;
+    letter-spacing: 1.45px;
 }
 
 .icon {
@@ -49,6 +48,5 @@
     justify-content: center;
     align-items: center;
     column-gap: 24px;
-    margin-top: 13px;
-    margin-bottom: 13px;
+    margin: 13px 127px;
 }
