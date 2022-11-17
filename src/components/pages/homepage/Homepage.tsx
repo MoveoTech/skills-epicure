@@ -3,6 +3,7 @@ import Banner from '../../banner/Banner';
 import Header from "../../header/Header";
 import Stripe from '../../stripe/Stripe';
 
+
 function Homepage() {
   return (
       <div className="container">
