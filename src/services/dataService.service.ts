@@ -31,6 +31,10 @@ export const fetchStripeData = async (type: string) => {
     }
 }
 
+export const fetchStores = async () => {
+    return (await Promise.resolve(db)).stores
+}
+
 export const fetchAbout = async () => {
     return (await Promise.resolve(db)).about
 }
