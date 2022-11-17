@@ -1,21 +1,22 @@
 import { useEffect, useState } from 'react'
 import { IRestaurant } from '../../interfaces/IRestaurant.interface'
-import { fetchPopularRestaurants } from '../../services/dataService.service'
+import { fetchStripeData } from '../../services/dataService.service'
 import Card from '../card/Card'
 import './Stripe.css'
 
 interface StripeProps {
     title : string
     all : boolean
+    type: string
 }
 
 const Stripe = (props : StripeProps) => {
-    const [restaurants, setRestaurants] = useState<Array<IRestaurant>>()
+    const [data, setData] = useState<Array<any>>()
 
     useEffect(() => {
         (async () => {
-        const data = await fetchPopularRestaurants()
-        setRestaurants(data as Array<IRestaurant>)
+        const data = await fetchStripeData(props.type)
+        setData(data as Array<any>)
         })()
     }, [])
 
@@ -23,7 +24,7 @@ const Stripe = (props : StripeProps) => {
         <div className='stripe-container'>
             <h2 className='title'>{props.title}</h2>
             <div className='cards-container'>
-            { restaurants?.map((restaurant) => (<Card restaurant={ restaurant } key={restaurant.name}/>))}
+            { data?.map((item) => (<Card type={ props.type } data={ item } key={ item.name }/>))}
             </div>
             { props.all ? 
             <div className='all-container'>
