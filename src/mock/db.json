@@ -1,6 +1,18 @@
 {
   "hero": "hero.png",
   "logo":"big-logo.svg",
+  "stores": [
+    {
+      "id": 5,
+      "name": "ios",
+      "icon": "ios.svg"
+    },
+    {
+      "id": 6,
+      "name": "android",
+      "icon": "android.svg"
+    }
+  ],
   "icons": [
     {
       "id": 1,

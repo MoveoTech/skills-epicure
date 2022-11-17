@@ -12,6 +12,10 @@ export const fetchIcons = async () => {
     return (await Promise.resolve(db)).icons
 }
 
+export const fetchStores = async () => {
+    return (await Promise.resolve(db)).stores
+}
+
 export const fetchAbout = async () => {
     return (await Promise.resolve(db)).about
 }
