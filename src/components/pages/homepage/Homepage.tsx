@@ -8,7 +8,8 @@ function Homepage() {
       <div className="container">
         <Header/>
         <Banner/>
-        <Stripe title="popular restaurant in epicure:" all={true}/>
+        <Stripe title="popular restaurant in epicure:" all={true} type="restaurants"/>
+        <Stripe title="signature dish of:" all={false} type="dishes"/>
       </div>
   );
 }
