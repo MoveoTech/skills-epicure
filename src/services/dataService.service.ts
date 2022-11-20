@@ -29,6 +29,7 @@ export const fetchStripeData = async (type: string) => {
         default:
             return null
     }
+}
 
 export const fetchStores = async () => {
     return (await Promise.resolve(db)).stores
