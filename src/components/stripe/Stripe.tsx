@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { IRestaurant } from '../../interfaces/IRestaurant.interface'
 import { fetchStripeData } from '../../services/dataService.service'
 import Card from '../card/Card'
 import './Stripe.css'
