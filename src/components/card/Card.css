@@ -1,0 +1,60 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 379px;
+}
+
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 169px;
+    background: #F9F4EA;
+    width: 379px;
+    letter-spacing: 2px;
+}
+
+.dish {
+    height: 348px;
+    justify-content: space-between;
+    padding: 24px 0px;
+}
+
+h3 {
+    padding: 0px 90px;
+}
+
+h5 {
+    padding: 0px 42px;
+}
+
+.h-cost {
+    padding: 0px 8px;
+}
+
+.specials-icon {
+    width: 40px;
+    height: 31px;
+}
+
+.cost-icon {
+    width: 14px;
+    height: 19px;
+    margin: 0px 4px -3px 0px;
+}
+
+.cost-container {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 112px;
+    height: 0px;
+    border: 0.5px solid #979797;
+}
