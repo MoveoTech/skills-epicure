@@ -5,7 +5,7 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div id="footer-container">
+    <div className='footer-container' id="footer-container">
         <About/>
         <div className='footer-menu'>
             <button className='menu-button'>Contact Us</button>
