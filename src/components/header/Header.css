@@ -27,16 +27,6 @@
     justify-content: space-between;
 }
 
-.menu-button {
-    font-family: 'Helvetica Neue light';
-    font-size: 18px;
-    color: #000000;
-    font-weight: normal;
-    border: none;
-    background-color: white;
-    letter-spacing: 1.45px;
-}
-
 .icon {
     height: auto;
     margin-left: 76px;
