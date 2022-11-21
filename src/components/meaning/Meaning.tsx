@@ -21,7 +21,7 @@ function Header() {
                 { icons ? icons.map((icon) => (
                 <div className='icon-container' key={icon.name + "div"}>
                     <img src={require(`../../resources/icons/${icon.icon}`)} key={icon.name} alt={icon.name}/> 
-                    <h5 key={icon.name + "text"}>{icon.name}</h5>
+                    <h5 className='specials-desc' key={icon.name + "text"}>{icon.name}</h5>
                 </div>)) : "" }
         </div>
       </div>
