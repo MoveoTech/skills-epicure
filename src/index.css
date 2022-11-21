@@ -17,7 +17,15 @@ code {
   font-style: normal;
   font-weight: normal;
   src: url('./resources/fonts/Helvetica_Neue_Light.woff') format('woff');
-  }
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0px;
+  letter-spacing: 1px;
+  align-self: center;
+}
 
 h1 {
   font-family: 'Helvetica Neue Light';
