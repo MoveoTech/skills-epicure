@@ -54,8 +54,8 @@ function createCardWithType(type: string, data: any) {
       const chefRestaurant = data as IRestaurant
       description = <div className='card-container'>
       <img src={require(`../../resources/images/${data.image}`)} className="card-weekly" alt={data.image}/> 
-        <div className='desc-container card-weekly'>
-          <h2>{chefRestaurant.name}</h2>
+        <div className='desc-container card-weekly-desc'>
+          <h2 className='chef-restaurant-title'>{chefRestaurant.name}</h2>
           {/* <Rating rating = {chefRestaurant.rating}/> */}
         </div>
       </div>

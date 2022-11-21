@@ -62,3 +62,13 @@ h5 {
 .card-weekly{
     width: 231px;
 }
+
+.card-weekly-desc{
+    width: 231px;
+    height: 133px;
+}
+
+.chef-restaurant-title {
+    font-weight: bold;
+    padding: 0px 10px;
+}
