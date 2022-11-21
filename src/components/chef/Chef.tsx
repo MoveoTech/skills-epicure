@@ -2,6 +2,7 @@ import './Chef.css'
 import { useState, useEffect } from 'react'
 import { IChef } from '../../interfaces/IChef.interface'
 import { fetchChefOfWeek } from '../../services/dataService.service'
+import Stripe from '../stripe/Stripe'
 
 
 function Chef() {
@@ -17,14 +18,16 @@ function Chef() {
   return (
       <div className='chef-container'>
         <h2 className='title'>Chef of the week:</h2>
-        
         {chef ? 
-        <div className='chef-desc'>
-            <div className='chef-image'>
-                <img src={require(`../../resources/images/${chef.image}`)} alt={chef?.last_name}/>
-                <h3 className='chef-name'>{chef.first_name + " " + chef.last_name}</h3>
+        <div className='chef-week'> 
+            <div className='chef-desc'>
+                <div className='chef-image'>
+                    <img src={require(`../../resources/images/${chef.image}`)} alt={chef?.last_name}/>
+                    <h3 className='chef-name'>{chef.first_name + " " + chef.last_name}</h3>
+                </div>
+                <h5>{chef.desc}</h5>
             </div>
-            <h5>{chef.desc}</h5>
+            <Stripe title="Yossi's Restaurants:" all={false} type="weekly"/>
         </div> : "" }
       </div>
   )
