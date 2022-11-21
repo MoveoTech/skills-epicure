@@ -1,0 +1,32 @@
+.chef-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+    height: 924px;
+    padding: 0px 127.5px;
+}
+
+.chef-desc {
+    display: flex;
+}
+
+.chef-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 478px;
+    height: 372px;
+    background: #000000;
+}
+
+.chef-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 78px;
+    width: 478px;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.8);
+}
