@@ -4,7 +4,7 @@ import { fetchSpecials } from "../../services/dataService.service"
 import { IIcon } from '../../interfaces/IIcon.interface'
 
 
-function Header() {
+function Meaning() {
   const [icons, setIcons] = useState<Array<IIcon>>()
 
   useEffect(() => {
@@ -29,4 +29,4 @@ function Header() {
 }
 
 
-export default Header
+export default Meaning
