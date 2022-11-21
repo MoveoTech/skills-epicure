@@ -42,3 +42,7 @@ export const fetchAbout = async () => {
 export const fetchSpecials = async () => {
     return (await Promise.resolve(db)).specials
 }
+
+export const fetchChefOfWeek = async () => {
+    return (await Promise.resolve(db)).weekly
+}
