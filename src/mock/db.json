@@ -118,5 +118,22 @@
       "cost": "98"
     }
   ],
+  "specials": [
+    {
+      "id": 1,
+      "name": "spicy",
+      "icon": "spicy.svg"
+    },
+    {
+      "id": 2,
+      "name": "vegetarian",
+      "icon": "vegetarian.svg"
+    },
+    {
+      "id": 3,
+      "name": "vegan",
+      "icon": "vegan.svg"
+    }
+  ],
   "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum non eu ipsum. Cras porta malesuada eros, eget blandit turpis suscipit at.  Vestibulum sed massa in magna sodales porta.  Vivamus elit urna, dignissim a vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no eu ipsum. Cras porta malesuada eros."
 }

@@ -38,3 +38,7 @@ export const fetchStores = async () => {
 export const fetchAbout = async () => {
     return (await Promise.resolve(db)).about
 }
+
+export const fetchSpecials = async () => {
+    return (await Promise.resolve(db)).specials
+}

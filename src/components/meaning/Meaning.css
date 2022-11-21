@@ -1,0 +1,29 @@
+.meaning-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 265px;
+    background: #FAFAFA;
+    margin: 63px 0px;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    text-transform: capitalize;
+}
+
+.title {
+    letter-spacing: 1.7px;
+}
+
+.icon-container {
+    width: 136px;
+    height: 127px;
+}
+
+.specials-desc {
+    padding: 27px 0px;
+}
