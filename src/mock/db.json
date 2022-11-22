@@ -35,6 +35,20 @@
       "icon": "cart.svg"
     }
   ],
+  "sort": [
+    {
+      "id": 1,
+      "name": "Price range"
+    },
+    {
+      "id": 2,
+      "name": "Distance"
+    },
+    {
+      "id": 3,
+      "name": "Rating"
+    }
+  ],
   "chefs": [
     {
       "id": 1,

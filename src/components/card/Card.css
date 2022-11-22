@@ -72,9 +72,3 @@ h5 {
     font-weight: bold;
     padding: 0px 10px;
 }
-
-.restaurants-page-cards {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 40px;
-}
