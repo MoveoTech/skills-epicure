@@ -1,3 +1,4 @@
+import { IChef } from "../interfaces/IChef.interface"
 import db from "../mock/db.json"
 
 export const fetchHeroImage = async () => {
@@ -26,6 +27,9 @@ export const fetchStripeData = async (type: string) => {
             return fetchPopularRestaurants()
         case 'dishes':
             return fetchSignatureDishes()
+        case 'weekly':
+            const data = await fetchChefOfWeek() as IChef
+            return data.resturants
         default:
             return null
     }
@@ -41,4 +45,8 @@ export const fetchAbout = async () => {
 
 export const fetchSpecials = async () => {
     return (await Promise.resolve(db)).specials
+}
+
+export const fetchChefOfWeek = async () => {
+    return (await Promise.resolve(db)).weekly
 }

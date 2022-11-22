@@ -40,25 +40,29 @@
       "id": 1,
       "first_name": "Yossi",
       "last_name": "Shitrit",
-      "image": "chef1.png",
+      "desc": "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.",
+      "image": "yossi.png",
       "resturants": [
         {
           "id": 1,
           "name": "Onza",
           "rating": "4",
-          "image": "resturant1.png"
+          "image": "onza.png",
+          "chef": "Yossi Shitrit"
         },
         {
           "id": 2,
           "name": "Kitchen Market",
           "rating": "4",
-          "image": "resturant2.png"
+          "image": "kitchen.png",
+          "chef": "Yossi Shitrit"
         },
         {
           "id": 3,
           "name": "Mashya",
           "rating": "2",
-          "image": "resturant3.png"
+          "image": "mashya.png",
+          "chef": "Yossi Shitrit"
         }
       ]
     },
@@ -66,7 +70,8 @@
       "id": 2,
       "first_name": "Asaf",
       "last_name": "Granit",
-      "image": "hef1.png"
+      "image": "asaf.png",
+      "resturants": []
     }
   ],
   "populars": [
@@ -135,5 +140,35 @@
       "icon": "vegan.svg"
     }
   ],
+  "weekly": {
+    "id": 1,
+    "first_name": "Yossi",
+    "last_name": "Shitrit",
+    "desc": "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.",
+    "image": "yossi.png",
+    "resturants": [
+      {
+        "id": 1,
+        "name": "Onza",
+        "rating": 4,
+        "image": "onza.png",
+        "chef": "Yossi Shitrit"
+      },
+      {
+        "id": 2,
+        "name": "Kitchen Market",
+        "rating": 4,
+        "image": "kitchen.png",
+        "chef": "Yossi Shitrit"
+      },
+      {
+        "id": 3,
+        "name": "Mashya",
+        "rating": 2,
+        "image": "mashya.png",
+        "chef": "Yossi Shitrit"
+      }
+    ]
+  },
   "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum non eu ipsum. Cras porta malesuada eros, eget blandit turpis suscipit at.  Vestibulum sed massa in magna sodales porta.  Vivamus elit urna, dignissim a vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no eu ipsum. Cras porta malesuada eros."
 }

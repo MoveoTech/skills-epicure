@@ -1,9 +1,25 @@
-.stripe-container {
+.restaurants-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 83px 127.5px 0px 127.5px;
     row-gap: 35px;
+}
+
+.dishes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 83px 127.5px 0px 127.5px;
+    row-gap: 35px;
+}
+
+.weekly-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 0px 0px 0px;
+    row-gap: 40px;
 }
 
 .all-container {
@@ -22,7 +38,10 @@
 .cards-container {
     display: flex;
     column-gap: 24px;
-    align-self: center;
+}
+
+.weekly-cards {
+    column-gap: 16px;
 }
 
 .arrow {
@@ -31,4 +50,8 @@
     background-image: url("../../resources/icons/arrow.svg");
     background-repeat: no-repeat;
     background-position: 13px 16px;
+}
+
+.weekly-title {
+    text-transform: capitalize;
 }

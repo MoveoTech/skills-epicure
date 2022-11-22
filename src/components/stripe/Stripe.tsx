@@ -20,9 +20,9 @@ const Stripe = (props : StripeProps) => {
     }, [])
 
     return (
-        <div className='stripe-container'>
-            <h2 className='title'>{props.title}</h2>
-            <div className='cards-container'>
+        <div className={props.type + '-container'}>
+            <h2 className={props.type + '-title title'}>{props.title}</h2>
+            <div className={props.type + '-cards cards-container'}>
             { data?.map((item) => (<Card type={ props.type } data={ item } key={ item.name }/>))}
             </div>
             { props.all ? 
