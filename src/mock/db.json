@@ -97,6 +97,50 @@
       "chef": "Yanir Green"
     }
   ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Claro",
+      "rating": 4,
+      "image": "claro.png",
+      "chef": "Ran Shmueli"
+    },
+    {
+      "id": 2,
+      "name": "Lumina",
+      "rating": 3,
+      "image": "lumina.png",
+      "chef": "Meir Adoni"
+    },
+    {
+      "id": 3,
+      "name": "Tiger Lily",
+      "rating": 4,
+      "image": "tiger-lily.png",
+      "chef": "Yanir Green"
+    },
+    {
+      "id": 4,
+      "name": "Claro",
+      "rating": 4,
+      "image": "claro.png",
+      "chef": "Ran Shmueli"
+    },
+    {
+      "id": 5,
+      "name": "Lumina",
+      "rating": 3,
+      "image": "lumina.png",
+      "chef": "Meir Adoni"
+    },
+    {
+      "id": 6,
+      "name": "Tiger Lily",
+      "rating": 4,
+      "image": "tiger-lily.png",
+      "chef": "Yanir Green"
+    }
+  ],
   "signatures": [
     {
       "id": 1,
