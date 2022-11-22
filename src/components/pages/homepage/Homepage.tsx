@@ -5,15 +5,29 @@ import Header from "../../header/Header";
 import Stripe from '../../stripe/Stripe';
 import Meaning from '../../meaning/Meaning';
 import Chef from '../../chef/Chef';
+import { IRestaurant } from '../../../interfaces/IRestaurant.interface';
+import { useEffect, useState } from 'react';
+import { IDish } from '../../../interfaces/IDish.interface';
+import { fetchStripeData } from '../../../services/dataService.service';
 
 
 function Homepage() {
+  const [popularRestaurants, setPopularRestaurants] = useState<Array<any>>()
+  const [signatureDishes, setSignatureDishes] = useState<Array<any>>()
+
+  useEffect(() => {
+    (async () => {
+      setPopularRestaurants(await fetchStripeData("restaurants") as Array<any>)
+      setSignatureDishes(await fetchStripeData("dishes") as Array<any>)
+    })()
+}, [])
+
   return (
       <div className="homepage-container">
         <Header/>
         <Banner/>
-        <Stripe title="popular restaurant in epicure:" all={true} type="restaurants"/>
-        <Stripe title="signature dish of:" all={false} type="dishes"/>
+        {popularRestaurants ? <Stripe title="popular restaurant in epicure:" all={true} type="restaurants" data={popularRestaurants}/> : ""}
+        {signatureDishes ? <Stripe title="signature dish of:" all={false} type="dishes" data={signatureDishes}/> : ""}
         <Meaning/>
         <Chef/>
         <Footer/>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { fetchStripeData } from '../../services/dataService.service'
 import Card from '../card/Card'
 import './Stripe.css'
 
@@ -7,16 +6,14 @@ interface StripeProps {
     title : string
     all : boolean
     type: string
+    data: Array<any>
 }
 
 const Stripe = (props : StripeProps) => {
     const [data, setData] = useState<Array<any>>()
 
     useEffect(() => {
-        (async () => {
-        const data = await fetchStripeData(props.type)
-        setData(data as Array<any>)
-        })()
+        setData(props.data)
     }, [])
 
     return (

@@ -1,17 +1,19 @@
 import './Chef.css'
 import { useState, useEffect } from 'react'
 import { IChef } from '../../interfaces/IChef.interface'
-import { fetchChefOfWeek } from '../../services/dataService.service'
+import { fetchChefOfWeek, fetchStripeData } from '../../services/dataService.service'
 import Stripe from '../stripe/Stripe'
 
 
 function Chef() {
     const [chef, setChef] = useState<IChef>()
+    const [weeklyRestaurants, setWeeklyRestaurants] = useState<Array<any>>()
 
     useEffect(() => {
       (async () => {
         const data = await fetchChefOfWeek()
         setChef(data as IChef)
+        setWeeklyRestaurants(await fetchStripeData("weekly") as Array<any>)
       })()
     }, [])
 
@@ -27,7 +29,7 @@ function Chef() {
                 </div>
                 <h5 className='chef-text-container'>{chef.desc}</h5>
             </div>
-            <Stripe title="Yossi's Restaurants:" all={false} type="weekly"/>
+            { weeklyRestaurants ? <Stripe title="Yossi's Restaurants:" all={false} type="weekly" data={weeklyRestaurants}/> : "" }
         </div> : "" }
       </div>
   )
