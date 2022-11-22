@@ -21,6 +21,7 @@ function createCardWithType(type: string, data: any) {
   let description
   switch (type) {
     case 'restaurants':
+    case'restaurants-page':
       const restaurant = data as IRestaurant
       description = <div className='card-container'>
       <img src={require(`../../resources/images/${data.image}`)} className="card-image" alt={data.image}/> 
