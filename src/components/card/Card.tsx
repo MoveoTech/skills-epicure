@@ -56,7 +56,6 @@ function createCardWithType(type: string, data: any) {
       <img src={require(`../../resources/images/${data.image}`)} className="card-weekly" alt={data.image}/> 
         <div className='desc-container card-weekly-desc'>
           <h2 className='chef-restaurant-title'>{chefRestaurant.name}</h2>
-          {/* <Rating rating = {chefRestaurant.rating}/> */}
         </div>
       </div>
     break
