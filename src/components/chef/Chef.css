@@ -1,10 +1,9 @@
 .chef-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 45px;
     height: 924px;
-    padding: 0px 127.5px;
+    padding: 0px 127.5px 90px;
 }
 
 .chef-desc {
@@ -34,4 +33,11 @@
 .chef-week {
     display: flex;
     flex-direction: column;
+}
+
+.chef-text-container{
+    width: 642px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.9px;
 }

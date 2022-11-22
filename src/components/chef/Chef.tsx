@@ -25,7 +25,7 @@ function Chef() {
                     <img src={require(`../../resources/images/${chef.image}`)} alt={chef?.last_name}/>
                     <h3 className='chef-name'>{chef.first_name + " " + chef.last_name}</h3>
                 </div>
-                <h5>{chef.desc}</h5>
+                <h5 className='chef-text-container'>{chef.desc}</h5>
             </div>
             <Stripe title="Yossi's Restaurants:" all={false} type="weekly"/>
         </div> : "" }
