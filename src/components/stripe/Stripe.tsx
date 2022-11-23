@@ -10,17 +10,12 @@ interface StripeProps {
 }
 
 const Stripe = (props : StripeProps) => {
-    const [data, setData] = useState<Array<any>>()
-
-    useEffect(() => {
-        setData(props.data)
-    }, [])
 
     return (
         <div className={props.type + '-container'}>
             <h2 className={props.type + '-title title'}>{props.title}</h2>
             <div className={props.type + '-cards cards-container'}>
-            { data?.map((item) => (<Card type={ props.type } data={ item } key={ item.name }/>))}
+            { props.data?.map((item) => (<Card type={ props.type } data={ item } key={ item.name + item.id }/>))}
             </div>
             { props.all ? 
             <div className='all-container'>

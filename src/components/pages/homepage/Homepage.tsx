@@ -5,9 +5,7 @@ import Header from "../../header/Header";
 import Stripe from '../../stripe/Stripe';
 import Meaning from '../../meaning/Meaning';
 import Chef from '../../chef/Chef';
-import { IRestaurant } from '../../../interfaces/IRestaurant.interface';
 import { useEffect, useState } from 'react';
-import { IDish } from '../../../interfaces/IDish.interface';
 import { fetchStripeData } from '../../../services/dataService.service';
 
 
