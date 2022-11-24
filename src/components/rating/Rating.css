@@ -6,7 +6,8 @@
 .star {
     width: 40px;
     height: 40px;
-    background-image: url("../../resources/icons/star.svg")
+    background-image: url("../../resources/icons/star.svg");
+    background-repeat: no-repeat;
 }
 
 .empty-star {
