@@ -3,5 +3,7 @@ export interface IRestaurant{
     name: string,
     rating: number,
     image: string,
-    chef: string
+    chef: string,
+    distance: number,
+    price: number
 }
