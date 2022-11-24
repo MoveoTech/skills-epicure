@@ -1,9 +1,18 @@
-
-.sort-box-container {
+.rating-sort-box-container {
     position: absolute;
     width: 353px;
     height: 324px;
-    left: 635px;
+    left: 720px;
+    top: 122px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.distance-sort-box-container {
+    position: absolute;
+    width: 353px;
+    height: 137px;
+    left: 550px;
     top: 122px;
     background: #FFFFFF;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
@@ -33,7 +42,7 @@
     column-gap: 4px;
 }
 
-.all-stars-container {
+.choice-sort-container {
     display: flex;
     flex-direction: column;
     row-gap: 12px;

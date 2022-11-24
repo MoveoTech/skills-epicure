@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Rating from '../../../rating/Rating'
 import './Sortbox.css'
 
 interface SortboxProps {
@@ -23,20 +24,6 @@ function Sortbox(props: SortboxProps) {
             setCheckbox(checkboxArr)
             props.sortRestaurants(index)
         }
-    
-        const starsLine = (starsOn: number) => {
-            let stars = []
-        
-            for (let i = 0; i < starsOn; ++i) {
-                stars.push(<div className='star' key={'star ' + i}></div>)
-            }
-        
-            for (let i = 0; i < starCount - starsOn; ++i) {
-                stars.push(<div className='star empty-star' key={'star ' + starsOn + i}></div>)
-            }
-        
-            return stars
-        }
 
         const makeStarsLines = () => {
             let starArr = []
@@ -44,7 +31,7 @@ function Sortbox(props: SortboxProps) {
                 starArr.push(
                     <div className='star-line' key={"stars" + i}>
                         <input type='checkbox' id={"checkbox-" + i.toString()} onChange={() => controlCheckboxes(i)} checked={checkbox.at(i-1)} className='tick-box'/>
-                         {starsLine(i)}
+                        <Rating total={starCount} rating={i}/>
                     </div>
                 )
             }
@@ -57,11 +44,15 @@ function Sortbox(props: SortboxProps) {
             switch (props.sortType) {
                 case 'Rating':
                     sortContainer = 
-                        <div className='all-stars-container'>
+                        <div className='choice-sort-container'>
                         {makeStarsLines()}
                         </div>
                     break
                 case 'Distance':
+                    sortContainer =
+                    <div className='choice-sort-container'>
+                    {/* {makeStarsLines()} */}
+                        </div>
                     break
                 case 'Price range':
                     break
@@ -70,11 +61,11 @@ function Sortbox(props: SortboxProps) {
             }
             setSortList(sortContainer)
         })()
-    }, [checkbox, props])
+    }, [checkbox])
 
 
-    return(
-        <div className='sort-box-container'>
+    return ( 
+        <div className={props.sortType.toLowerCase() + '-sort-box-container'}>
             <div className='sort-title'>{props.sortType}</div>
             {sortList}
         </div>
