@@ -117,42 +117,54 @@
       "name": "Claro",
       "rating": 4,
       "image": "claro.png",
-      "chef": "Ran Shmueli"
+      "chef": "Ran Shmueli",
+      "distance": 1,
+      "price": 3
     },
     {
       "id": 2,
       "name": "Lumina",
       "rating": 3,
       "image": "lumina.png",
-      "chef": "Meir Adoni"
+      "chef": "Meir Adoni",
+      "distance": 2,
+      "price": 3
     },
     {
       "id": 3,
       "name": "Tiger Lily",
       "rating": 4,
       "image": "tiger-lily.png",
-      "chef": "Yanir Green"
+      "chef": "Yanir Green",
+      "distance": 1,
+      "price": 1
     },
     {
       "id": 4,
       "name": "Claro",
       "rating": 4,
       "image": "claro.png",
-      "chef": "Ran Shmueli"
+      "chef": "Ran Shmueli",
+      "distance": 2,
+      "price": 1
     },
     {
       "id": 5,
       "name": "Lumina",
       "rating": 3,
       "image": "lumina.png",
-      "chef": "Meir Adoni"
+      "chef": "Meir Adoni",
+      "distance": 2,
+      "price": 2
     },
     {
       "id": 6,
       "name": "Tiger Lily",
       "rating": 4,
       "image": "tiger-lily.png",
-      "chef": "Yanir Green"
+      "chef": "Yanir Green",
+      "distance": 3,
+      "price": 3
     }
   ],
   "signatures": [
