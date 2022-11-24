@@ -1,0 +1,52 @@
+
+.sort-box-container {
+    position: absolute;
+    width: 353px;
+    height: 324px;
+    left: 635px;
+    top: 122px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.sort-title {
+    font-family: 'Helvetica Neue light';
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    border: none;
+    background-color: white;
+    letter-spacing: 1.45px;
+    padding: 12px 0px 20px 0px; 
+}
+
+.stars-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.star-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+}
+
+.all-stars-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+input[type="checkbox"] {
+    accent-color: #5e5e5e;
+}
+
+.tick-box {
+    box-sizing: border-box;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #000000;
+    margin: 0px 11px 0px 0px;
+}

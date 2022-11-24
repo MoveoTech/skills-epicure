@@ -10,34 +10,30 @@ import './Restaurants.css'
 
 
 function Restaurants() {
-  const [restaurants, setRestaurants] = useState<Array<any>>()
-  const [direction, setDirection] = useState<number>(1)
+  const [originalRestaurants, setOriginalRestaurants] = useState<Array<IRestaurant>>()
+  const [restaurants, setRestaurants] = useState<Array<IRestaurant>>()
 
   useEffect(() => {
     (async () => {
-      setRestaurants(await fetchStripeData("restaurants-page") as Array<any>)
+      const restaurantsData = await fetchStripeData("restaurants-page") as Array<any>
+      setOriginalRestaurants(restaurantsData)
+      setRestaurants(restaurantsData)
     })()
   }, [])
 
-  function sortRestaurants(sortedBy: String) {
-    if (restaurants) {
-      let sortedRestaurants: Array<IRestaurant> = []
-      switch (sortedBy) {
-        case 'Rating':
-          sortedRestaurants = Array.from((restaurants as Array<IRestaurant>).sort((a, b) => a.rating > b.rating ? direction : -1 * direction))
-          setDirection(-1*direction)
-          setRestaurants(sortedRestaurants)
-          break
-        default:
-          break
-      }
+  function sortRestaurants(sortStar: number) {
+    if (sortStar === -1) {
+      setRestaurants(originalRestaurants)
     }
+    else if (originalRestaurants) 
+      setRestaurants(Array.from((originalRestaurants).filter((restaurant) => restaurant.rating === sortStar )))
+    
   }
 
   return (
       <div className="restaurantspage-container">
         <Header/>
-        <Sort onSort={sortRestaurants} />
+        <Sort sortRestaurants={sortRestaurants} />
         { restaurants ? <Stripe title="" all={false} type="restaurants-page" data={restaurants}/> : "" }
         <Footer/>
       </div>
