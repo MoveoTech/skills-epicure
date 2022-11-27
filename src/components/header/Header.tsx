@@ -23,7 +23,7 @@ function Header() {
           <h4 onClick={() => navigate("/")}>EPICURE</h4>
           <div className='buttons-container'>
             <button className='menu-button' onClick={() => navigate("/restaurants")}>Restaurants</button>
-            <button className='menu-button'>Chefs</button>
+            <button className='menu-button' onClick={() => navigate("/chefs")}>Chefs</button>
           </div>
         </div>
         <div className="user-container">
