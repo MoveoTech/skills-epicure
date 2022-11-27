@@ -6,18 +6,23 @@ import Stripe from '../../stripe/Stripe';
 import Meaning from '../../meaning/Meaning';
 import Chef from '../../chef/Chef';
 import { useEffect, useState } from 'react';
-import { fetchStripeData } from '../../../services/dataService.service';
+import { fetchChefOfWeek, fetchStripeData } from '../../../services/dataService.service';
 import About from '../../about/About';
+import { IChef } from '../../../interfaces/IChef.interface';
 
 
 function Homepage() {
   const [popularRestaurants, setPopularRestaurants] = useState<Array<any>>()
   const [signatureDishes, setSignatureDishes] = useState<Array<any>>()
+  const [chef, setChef] = useState<IChef>()
+  const [weeklyRestaurants, setWeeklyRestaurants] = useState<Array<any>>()
 
   useEffect(() => {
     (async () => {
       setPopularRestaurants(await fetchStripeData("restaurants") as Array<any>)
       setSignatureDishes(await fetchStripeData("dishes") as Array<any>)
+      setChef(await fetchChefOfWeek() as IChef)
+      setWeeklyRestaurants(await fetchStripeData("weekly") as Array<any>)
     })()
 }, [])
 
@@ -28,7 +33,7 @@ function Homepage() {
         {popularRestaurants ? <Stripe title="popular restaurant in epicure:" all={true} type="restaurants" data={popularRestaurants}/> : ""}
         {signatureDishes ? <Stripe title="signature dish of:" all={false} type="dishes" data={signatureDishes}/> : ""}
         <Meaning/>
-        <Chef/>
+        {(chef && weeklyRestaurants) ? <Chef chef={chef} weeklyRestaurants={weeklyRestaurants} weekly={true}/> : "" }
         <About/>
         <Footer/>
       </div>
