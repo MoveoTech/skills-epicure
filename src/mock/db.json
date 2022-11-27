@@ -172,6 +172,22 @@
             "desc": "Basil dough, cashew \"butter\", demi-glace, bison & radish",
             "special": "",
             "cost": "98"
+          },
+          {
+            "id": 7,
+            "name": "Garbanzo Frito",
+            "image": "frito.png",
+            "desc": "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
+            "special": "",
+            "cost": "98"
+          },
+          {
+            "id": 8,
+            "name": "Smoked Pizza",
+            "image": "pizza.png",
+            "desc": "Basil dough, cashew \"butter\", demi-glace, bison & radish",
+            "special": "",
+            "cost": "98"
           }
       ]
     },
