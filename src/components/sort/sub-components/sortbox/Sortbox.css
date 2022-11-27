@@ -10,6 +10,9 @@
 
 .distance-sort-box-container {
     position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 353px;
     height: 137px;
     left: 550px;
@@ -58,4 +61,13 @@ input[type="checkbox"] {
     width: 18px;
     border: 1px solid #000000;
     margin: 0px 11px 0px 0px;
+}
+
+.distance-container {
+    width: 309px;
+    height: 56px;
+    left: 23px;
+    top: 53px;
+    background: #F9F4EA;
+    border-radius: 8px;
 }

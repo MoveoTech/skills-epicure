@@ -51,8 +51,10 @@ function Sortbox(props: SortboxProps) {
                 case 'Distance':
                     sortContainer =
                     <div className='choice-sort-container'>
-                    {/* {makeStarsLines()} */}
+                        <div className='distance-container'>
+
                         </div>
+                    </div>
                     break
                 case 'Price range':
                     break
