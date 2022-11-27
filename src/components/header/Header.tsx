@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 function Header() {
   const [icons, setIcons] = useState<Array<IIcon>>()
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   useEffect(() => {
     (async () => {

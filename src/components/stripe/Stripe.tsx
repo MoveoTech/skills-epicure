@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
 import Card from '../card/Card'
+import { useNavigate } from 'react-router-dom'
 import './Stripe.css'
 
 interface StripeProps {
@@ -10,6 +10,7 @@ interface StripeProps {
 }
 
 const Stripe = (props : StripeProps) => {
+    const navigate = useNavigate()
 
     return (
         <div className={props.type + '-container'}>
@@ -19,7 +20,7 @@ const Stripe = (props : StripeProps) => {
             </div>
             { props.all ? 
             <div className='all-container'>
-                <h2 className='all-text'>All Restaurants</h2>
+                <h2 className='all-text' onClick={() => navigate("/restaurants")}>All Restaurants</h2>
                 <div className='arrow'></div>
             </div> 
             : ""}
