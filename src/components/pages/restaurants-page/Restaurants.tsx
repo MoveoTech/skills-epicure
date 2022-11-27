@@ -37,7 +37,7 @@ function Restaurants() {
         { restaurants ? <Stripe title="" all={false} type="restaurants-page" data={restaurants}/> : "" }
         <Footer/>
       </div>
-  );
+  )
 }
 
 export default Restaurants
