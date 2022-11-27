@@ -7,6 +7,7 @@ import Meaning from '../../meaning/Meaning';
 import Chef from '../../chef/Chef';
 import { useEffect, useState } from 'react';
 import { fetchStripeData } from '../../../services/dataService.service';
+import About from '../../about/About';
 
 
 function Homepage() {
@@ -28,6 +29,7 @@ function Homepage() {
         {signatureDishes ? <Stripe title="signature dish of:" all={false} type="dishes" data={signatureDishes}/> : ""}
         <Meaning/>
         <Chef/>
+        <About/>
         <Footer/>
       </div>
   );
