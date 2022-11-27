@@ -17,7 +17,7 @@ function Rating(props : RatingProps)  {
             }
             setStars(newStars)      
         })()
-    }, [])
+    }, [props])
 
     return (
         <div className="rating-container">

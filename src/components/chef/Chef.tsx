@@ -1,7 +1,5 @@
 import './Chef.css'
-import { useState, useEffect } from 'react'
 import { IChef } from '../../interfaces/IChef.interface'
-import { fetchChefOfWeek, fetchStripeData } from '../../services/dataService.service'
 import Stripe from '../stripe/Stripe'
 
 interface ChefProps {

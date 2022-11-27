@@ -63,7 +63,7 @@ function Sortbox(props: SortboxProps) {
             }
             setSortList(sortContainer)
         })()
-    }, [checkbox])
+    }, [checkbox, props])
 
 
     return ( 
