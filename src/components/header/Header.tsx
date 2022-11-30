@@ -3,13 +3,14 @@ import { useState, useEffect } from 'react'
 import { fetchIcons } from "../../services/dataService.service"
 import { IIcon } from '../../interfaces/IIcon.interface'
 import { useNavigate } from 'react-router-dom'
-import { createConditional } from 'typescript'
 
 
 function Header() {
+  let smallWidth: string = '24px'
+  let bigWidth: string = '410px'
   const [icons, setIcons] = useState<Array<IIcon>>()
   const [searchVisibility, setSearchVisibility] = useState<DocumentVisibilityState>('hidden')
-  const [width, setWidth] = useState<string>('23px')
+  const [width, setWidth] = useState<string>(smallWidth)
 
   const navigate = useNavigate()
 
@@ -24,7 +25,7 @@ function Header() {
     switch (icon) {
       case 'search':
         setSearchVisibility(searchVisibility === 'hidden' ? 'visible' : 'hidden')
-        setWidth(width=='23px' ? '410px' : '23px')
+        setWidth(width === smallWidth ? bigWidth : smallWidth)
       break
     
       default:
@@ -41,9 +42,8 @@ function Header() {
 
     else if (icon.name === 'search')
       iconElement = <div className='header-search' style={{visibility:searchVisibility, width:width}}>
-        <input className='input-header' style={{visibility:searchVisibility, width:width}} type="text" placeholder='Search for restaurant cuisine, chef'></input>
-          
-          <img onClick={() => handleHeaderIconClick(icon.name)} style={{visibility:'visible', width:'24px'}} src={require(`../../resources/icons/${icon.icon}`)} 
+          <input className='input-header' style={{visibility:searchVisibility, width:width}} type="text" placeholder='Search for restaurant cuisine, chef'></input>
+          <img onClick={() => handleHeaderIconClick(icon.name)} style={{visibility:'visible', width: smallWidth}} src={require(`../../resources/icons/${icon.icon}`)} 
           key={icon.name} className= "cursor" alt={icon.name} />
         </div>
 
