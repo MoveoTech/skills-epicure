@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 127.5px 0px 127.5px;
+    padding: 0px 127px 0px 127px;
     row-gap: 35px;
 }
 
@@ -62,8 +62,7 @@
 }
 
 .restaurant-dishes-cards{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    flex-wrap: wrap;
     row-gap: 40px;
     column-gap: 32px;
 }
