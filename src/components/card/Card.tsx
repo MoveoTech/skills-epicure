@@ -86,7 +86,7 @@ function Card (props : CardProps) {
     }
 
     return (
-      <div>{card} </div>
+      <div className='cursor'>{card} </div>
     )
   }
 
