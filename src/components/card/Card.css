@@ -4,7 +4,7 @@
 }
 
 .card-image {
-    width: 379px;
+    width: 373px;
 }
 
 .desc-container {
@@ -15,7 +15,7 @@
     gap: 8px;
     height: 169px;
     background: #F9F4EA;
-    width: 379px;
+    width: 373px;
     letter-spacing: 2px;
 }
 
@@ -78,12 +78,12 @@ h5 {
 }
 
 .restaurant-dish-card-image {
-    width: 272px;
+    width: 268px;
     height: 173px;
 }
 
 .restaurant-dish-desc {
-    width: 272px;
+    width: 268px;
     height: 240px;
     justify-content: space-around;
 }
