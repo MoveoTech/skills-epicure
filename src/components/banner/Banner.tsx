@@ -20,7 +20,7 @@ function Banner() {
         <div className='title-container'>
           <h1>Epicure works with the top
               chef restaurants in Tel Aviv</h1>
-          <input type="text" placeholder='Search for restaurant cuisine, chef'></input>
+          <input className='input-banner' type="text" placeholder='Search for restaurant cuisine, chef'></input>
         </div>
     </div>
   );

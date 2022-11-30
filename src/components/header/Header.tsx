@@ -3,10 +3,14 @@ import { useState, useEffect } from 'react'
 import { fetchIcons } from "../../services/dataService.service"
 import { IIcon } from '../../interfaces/IIcon.interface'
 import { useNavigate } from 'react-router-dom'
+import { createConditional } from 'typescript'
 
 
 function Header() {
   const [icons, setIcons] = useState<Array<IIcon>>()
+  const [searchVisibility, setSearchVisibility] = useState<DocumentVisibilityState>('hidden')
+  const [width, setWidth] = useState<string>('23px')
+
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -15,6 +19,36 @@ function Header() {
       setIcons(data as Array<IIcon>)
     })()
   }, [])
+
+  function handleHeaderIconClick(icon: string) {
+    switch (icon) {
+      case 'search':
+        setSearchVisibility(searchVisibility === 'hidden' ? 'visible' : 'hidden')
+        setWidth(width=='23px' ? '410px' : '23px')
+      break
+    
+      default:
+      break
+    }
+  }
+
+  function createIconElement(icon: IIcon, index:number) {
+    let iconElement: JSX.Element = <></>
+
+    if (index !== 0 && icon.name !== "search") 
+      iconElement = <img onClick={() => handleHeaderIconClick(icon.name)} src={require(`../../resources/icons/${icon.icon}`)} 
+      key={icon.name} className= "cursor" alt={icon.name} />
+
+    else if (icon.name === 'search')
+      iconElement = <div className='header-search' style={{visibility:searchVisibility, width:width}}>
+        <input className='input-header' style={{visibility:searchVisibility, width:width}} type="text" placeholder='Search for restaurant cuisine, chef'></input>
+          
+          <img onClick={() => handleHeaderIconClick(icon.name)} style={{visibility:'visible', width:'24px'}} src={require(`../../resources/icons/${icon.icon}`)} 
+          key={icon.name} className= "cursor" alt={icon.name} />
+        </div>
+
+    return iconElement
+  }
 
   return (
       <div className="header-container">
@@ -27,7 +61,7 @@ function Header() {
           </div>
         </div>
         <div className="user-container">
-          { icons ? icons.map((icon, index) => (index !== 0 ? <img src={icons ? require(`../../resources/icons/${icon.icon}`) : ""} key={icon.name} className="cursor" alt={icon.name}/> : "")) : "" }         
+          { icons ? icons.map((icon, index) => createIconElement(icon, index)): "" }         
         </div>
       </div>
   )

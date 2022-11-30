@@ -40,3 +40,30 @@
     column-gap: 24px;
     margin: 13px 127px;
 }
+
+.header-search {
+    display: flex;
+    justify-content: end;    
+    width: 410px;
+    border: 0.5px solid #000000;
+    border-radius: 4px;
+    align-items: center;
+    padding: 6px 0px 6px 12px;
+    transition:visibility 0.3s linear, width 0.3s linear;
+
+}
+
+.input-header {
+    border: none;
+    font-size: 16px;
+}
+.input-header[type="text"],
+.input-header::placeholder {
+    color: #000000;
+    font-family: 'Helvetica Neue Light';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 1.75px;
+    transition: color 0.2s ease-in-out;
+}

@@ -29,7 +29,7 @@ h1 {
     margin: 0px;
 }
 
-input {
+.input-banner {
     background-color: transparent;
     box-sizing: border-box;
     display: flex;
@@ -43,8 +43,8 @@ input {
     background-repeat: no-repeat;
     padding-left: 70px;
 }
-input[type="text"],
-input::placeholder {
+.input-banner[type="text"],
+.input-banner::placeholder {
     color: #000000;
     font-family: 'Helvetica Neue Light';
     font-weight: normal;
@@ -60,3 +60,4 @@ input:focus {
 input:focus::-webkit-input-placeholder {
     color: #0000006e;
 }
+
