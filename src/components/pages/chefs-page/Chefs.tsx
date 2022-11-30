@@ -22,7 +22,6 @@ function Chefs() {
         <div className="chefs-page-container">
             <Header/>
             <div className='chefs-container'>
-                {console.log(chefs)}
                 { chefs?.map((chef) => (<Chef chef={chef} weeklyRestaurants={[]} weekly={false} key={chef.id}/>)) }
             </div>
             <Footer/>
