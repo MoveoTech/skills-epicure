@@ -1,33 +1,26 @@
-import { useEffect, useState } from 'react'
-import { fetchStripeData } from '../../services/dataService.service'
 import Card from '../card/Card'
+import { useNavigate } from 'react-router-dom'
 import './Stripe.css'
 
 interface StripeProps {
     title : string
     all : boolean
     type: string
+    data: Array<any>
 }
 
 const Stripe = (props : StripeProps) => {
-    const [data, setData] = useState<Array<any>>()
-
-    useEffect(() => {
-        (async () => {
-        const data = await fetchStripeData(props.type)
-        setData(data as Array<any>)
-        })()
-    }, [])
+    const navigate = useNavigate()
 
     return (
         <div className={props.type + '-container'}>
             <h2 className={props.type + '-title title'}>{props.title}</h2>
             <div className={props.type + '-cards cards-container'}>
-            { data?.map((item) => (<Card type={ props.type } data={ item } key={ item.name }/>))}
+            { props.data?.map((item) => (<Card type={ props.type } data={ item } key={ item.name + item.id }/>))}
             </div>
             { props.all ? 
             <div className='all-container'>
-                <h2 className='all-text'>All Restaurants</h2>
+                <h2 className='all-text' onClick={() => navigate("/restaurants")}>All Restaurants</h2>
                 <div className='arrow'></div>
             </div> 
             : ""}

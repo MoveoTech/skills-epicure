@@ -14,12 +14,27 @@
     row-gap: 35px;
 }
 
+.restaurant-dishes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 127.5px 0px 127.5px;
+    row-gap: 35px;
+}
+
 .weekly-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 45px 0px 0px 0px;
     row-gap: 40px;
+}
+
+.restaurants-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 127.5px;
 }
 
 .all-container {
@@ -38,6 +53,19 @@
 .cards-container {
     display: flex;
     column-gap: 24px;
+}
+
+.restaurants-page-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 40px;
+}
+
+.restaurant-dishes-cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 40px;
+    column-gap: 32px;
 }
 
 .weekly-cards {

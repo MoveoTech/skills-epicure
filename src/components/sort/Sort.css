@@ -1,0 +1,23 @@
+.sort-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 47px;
+    background-color: #FAFAFA;
+    width: 1440px;
+    height: 60px;
+}
+
+.sort-button {
+    display: flex;
+    background-color: #FAFAFA;
+}
+
+.sort-arrow {
+    background-image: url('../../resources/icons/sort.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    width: 18px;
+    padding: 11px;
+}

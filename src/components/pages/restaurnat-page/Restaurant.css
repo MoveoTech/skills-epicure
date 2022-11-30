@@ -1,0 +1,33 @@
+.restaurant-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.restaurant-banner {
+    margin: 0px 127px 30px;
+    width: 1186px;
+    height: 425px;
+}
+
+.restaurant-title {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.tags-container {
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+
+}
+
+.clock {
+    width: 17px;
+    height: 18px;
+    color: black;
+    background-image: url("../../../resources/icons/clock.svg");
+    background-repeat: no-repeat;
+}

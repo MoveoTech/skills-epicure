@@ -35,6 +35,20 @@
       "icon": "cart.svg"
     }
   ],
+  "sort": [
+    {
+      "id": 1,
+      "name": "Price range"
+    },
+    {
+      "id": 2,
+      "name": "Distance"
+    },
+    {
+      "id": 3,
+      "name": "Rating"
+    }
+  ],
   "chefs": [
     {
       "id": 1,
@@ -80,6 +94,7 @@
       "name": "Claro",
       "rating": 4,
       "image": "claro.png",
+      "banner": "claro-banner.png",
       "chef": "Ran Shmueli"
     },
     {
@@ -87,6 +102,7 @@
       "name": "Lumina",
       "rating": 3,
       "image": "lumina.png",
+      "banner": "claro-banner.png",
       "chef": "Meir Adoni"
     },
     {
@@ -94,7 +110,188 @@
       "name": "Tiger Lily",
       "rating": 4,
       "image": "tiger-lily.png",
+      "banner": "claro-banner.png",
       "chef": "Yanir Green"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Claro",
+      "rating": 4,
+      "image": "claro.png",
+      "banner": "claro-banner.png",
+      "chef": "Ran Shmueli",
+      "distance": 1,
+      "price": 3,
+      "dishes": [
+        {
+        "id": 1,
+        "name": "Pad Ki Mao",
+        "image": "pad.png",
+        "desc": "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+        "special": "",
+        "cost": "98"
+        },
+        {
+          "id": 2,
+          "name": "Garbanzo Frito",
+          "image": "frito.png",
+          "desc": "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
+          "special": "",
+          "cost": "98"
+        },
+        {
+          "id": 3,
+          "name": "Smoked Pizza",
+          "image": "pizza.png",
+          "desc": "Basil dough, cashew \"butter\", demi-glace, bison & radish",
+          "special": "",
+          "cost": "98"
+        },
+        {
+          "id": 4,
+          "name": "Pad Ki Mao",
+          "image": "pad.png",
+          "desc": "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+          "special": "",
+          "cost": "98"
+          },
+          {
+            "id": 5,
+            "name": "Garbanzo Frito",
+            "image": "frito.png",
+            "desc": "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
+            "special": "",
+            "cost": "98"
+          },
+          {
+            "id": 6,
+            "name": "Smoked Pizza",
+            "image": "pizza.png",
+            "desc": "Basil dough, cashew \"butter\", demi-glace, bison & radish",
+            "special": "",
+            "cost": "98"
+          },
+          {
+            "id": 7,
+            "name": "Garbanzo Frito",
+            "image": "frito.png",
+            "desc": "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
+            "special": "",
+            "cost": "98"
+          },
+          {
+            "id": 8,
+            "name": "Smoked Pizza",
+            "image": "pizza.png",
+            "desc": "Basil dough, cashew \"butter\", demi-glace, bison & radish",
+            "special": "",
+            "cost": "98"
+          }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lumina",
+      "rating": 3,
+      "image": "lumina.png",
+      "banner": "claro-banner.png",
+      "chef": "Meir Adoni",
+      "distance": 2,
+      "price": 3,
+      "dishes": [
+        {
+          "id": 1,
+          "name": "Pad Ki Mao",
+          "image": "pad.png",
+          "desc": "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+          "special": "",
+          "cost": "98"
+        },
+        {
+          "id": 2,
+          "name": "Garbanzo Frito",
+          "image": "frito.png",
+          "desc": "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
+          "special": "",
+          "cost": "98"
+        },
+        {
+          "id": 3,
+          "name": "Smoked Pizza",
+          "image": "pizza.png",
+          "desc": "Basil dough, cashew \"butter\", demi-glace, bison & radish",
+          "special": "",
+          "cost": "98"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Tiger Lily",
+      "rating": 4,
+      "image": "tiger-lily.png",
+      "banner": "claro-banner.png",
+      "chef": "Yanir Green",
+      "distance": 1,
+      "price": 1,
+      "dishes": [
+        {
+          "id": 1,
+          "name": "Pad Ki Mao",
+          "image": "pad.png",
+          "desc": "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+          "special": "",
+          "cost": "98"
+        },
+        {
+          "id": 2,
+          "name": "Garbanzo Frito",
+          "image": "frito.png",
+          "desc": "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
+          "special": "",
+          "cost": "98"
+        },
+        {
+          "id": 3,
+          "name": "Smoked Pizza",
+          "image": "pizza.png",
+          "desc": "Basil dough, cashew \"butter\", demi-glace, bison & radish",
+          "special": "",
+          "cost": "98"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Claro",
+      "rating": 4,
+      "image": "claro.png",
+      "banner": "claro-banner.png",
+      "chef": "Ran Shmueli",
+      "distance": 2,
+      "price": 1
+    },
+    {
+      "id": 5,
+      "name": "Lumina",
+      "rating": 3,
+      "image": "lumina.png",
+      "banner": "claro-banner.png",
+      "chef": "Meir Adoni",
+      "distance": 2,
+      "price": 2
+    },
+    {
+      "id": 6,
+      "name": "Tiger Lily",
+      "rating": 4,
+      "image": "tiger-lily.png",
+      "banner": "claro-banner.png",
+      "chef": "Yanir Green",
+      "distance": 3,
+      "price": 3
     }
   ],
   "signatures": [
