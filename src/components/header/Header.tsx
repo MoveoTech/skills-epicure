@@ -1,16 +1,19 @@
 import './Header.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, StyleHTMLAttributes } from 'react'
 import { fetchIcons } from "../../services/dataService.service"
 import { IIcon } from '../../interfaces/IIcon.interface'
 import { useNavigate } from 'react-router-dom'
 
 
 function Header() {
-  let smallWidth: string = '24px'
-  let bigWidth: string = '410px'
+  const smallWidth: string = '24px'
+  const bigWidth: string = '410px'
+  const withPadding: string = '6px 12px'
+  const noPadding: string = '0px'
   const [icons, setIcons] = useState<Array<IIcon>>()
   const [searchVisibility, setSearchVisibility] = useState<DocumentVisibilityState>('hidden')
-  const [width, setWidth] = useState<string>(smallWidth)
+  const [searchWidth, setSearchWidth] = useState<string>(smallWidth)
+  const [searchPadding, setSearchPadding] = useState<string>(noPadding)
 
   const navigate = useNavigate()
 
@@ -25,12 +28,44 @@ function Header() {
     switch (icon) {
       case 'search':
         setSearchVisibility(searchVisibility === 'hidden' ? 'visible' : 'hidden')
-        setWidth(width === smallWidth ? bigWidth : smallWidth)
+        setSearchWidth(searchWidth === smallWidth ? bigWidth : smallWidth)
+        setSearchPadding(searchPadding === noPadding ? withPadding : noPadding )
+
       break
     
       default:
       break
     }
+  }
+
+  function createSearchStyle(element: string) {
+    const padding = '6px 12px'
+    let style: React.CSSProperties = {}
+    switch (element) {
+      case 'div':
+        style = {
+          visibility: searchVisibility, 
+          width: searchWidth,
+          padding: searchPadding
+        }
+        break
+      case 'input':
+        style = {
+          visibility: searchVisibility, 
+          width: searchWidth,
+        }
+        break
+      case 'icon':
+        style = {
+          visibility: 'visible', 
+          width: smallWidth,
+        }
+        break
+      default:
+        break
+    }
+    
+    return style
   }
 
   function createIconElement(icon: IIcon, index:number) {
@@ -41,9 +76,9 @@ function Header() {
       key={icon.name} className= "cursor" alt={icon.name} />
 
     else if (icon.name === 'search')
-      iconElement = <div className='header-search' style={{visibility:searchVisibility, width:width}}>
-          <input className='input-header' style={{visibility:searchVisibility, width:width}} type="text" placeholder='Search for restaurant cuisine, chef'></input>
-          <img onClick={() => handleHeaderIconClick(icon.name)} style={{visibility:'visible', width: smallWidth}} src={require(`../../resources/icons/${icon.icon}`)} 
+      iconElement = <div className='header-search' style={createSearchStyle('div')}>
+          <input className='input-header' style={createSearchStyle('input')} type="text" placeholder='Search for restaurant cuisine, chef'></input>
+          <img onClick={() => handleHeaderIconClick(icon.name)} style={createSearchStyle('icon')} src={require(`../../resources/icons/${icon.icon}`)} 
           key={icon.name} className= "cursor" alt={icon.name} />
         </div>
 
