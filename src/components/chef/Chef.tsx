@@ -12,18 +12,18 @@ interface ChefProps {
 function Chef(props: ChefProps) {
   
   return (
-      <div className='chef-container'>
-        <h2 className='title'>Chef of the week:</h2>
+      <div className={props.weekly ? 'weekly-chef-container' : 'chef-container'}>
+        {props.weekly ? <h2 className='title'>Chef of the week:</h2> : "" }
         {props.chef ? 
         <div className='chef-week'> 
             <div className='chef-desc'>
-                <div className='chef-image'>
-                    <img src={require(`../../resources/images/${props.chef.image}`)} alt={props.chef?.last_name}/>
-                    <h3 className='chef-name'>{props.chef.first_name + " " + props.chef.last_name}</h3>
+                <div className={props.weekly ? 'weekly-chef-image' : 'chef-image'}>
+                    <img className='chef-image' src={require(`../../resources/images/${props.chef.image}`)} alt={props.chef?.last_name}/>
+                    <h3 className={props.weekly ? 'weekly-chef-name' : 'chef-name'}>{props.chef.first_name + " " + props.chef.last_name}</h3>
                 </div>
-                <h5 className='chef-text-container'>{props.chef.desc}</h5>
+                { props.weekly ? <h5 className='chef-text-container'>{props.chef.desc}</h5> : "" }
             </div>
-            { props.weeklyRestaurants ? <Stripe title="Yossi's Restaurants:" all={false} type="weekly" data={props.weeklyRestaurants}/> : "" }
+            { (props.weekly && props.weeklyRestaurants) ? <Stripe title="Yossi's Restaurants:" all={false} type="weekly" data={props.weeklyRestaurants}/> : "" }
         </div> : "" }
       </div>
   )

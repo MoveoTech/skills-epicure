@@ -1,9 +1,14 @@
+.weekly-chef-container {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 0px 127.5px 90px;
+}
+
 .chef-container {
     display: flex;
     flex-direction: column;
     gap: 45px;
-    height: 924px;
-    padding: 0px 127.5px 90px;
 }
 
 .chef-desc {
@@ -14,12 +19,31 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    width: 378px;
+    height: 338px;
+}
+
+.weekly-chef-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 478px;
     height: 372px;
     background: #000000;
 }
 
 .chef-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 78px;
+    width: 378px;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.weekly-chef-name {
     display: flex;
     align-items: center;
     justify-content: center;

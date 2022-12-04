@@ -53,6 +53,10 @@ export const fetchChefOfWeek = async () => {
     return (await Promise.resolve(db)).weekly
 }
 
+export const fetchChefs = async () => {
+    return (await Promise.resolve(db)).chefs
+}
+
 export const fetchRestaurants = async () => {
     return (await Promise.resolve(db)).restaurants
 }
